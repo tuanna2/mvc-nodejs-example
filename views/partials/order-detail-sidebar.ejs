@@ -1,0 +1,125 @@
+<div id="right-sidebar" class="settings-panel" style="overflow: auto;">
+    <i class="settings-close mdi mdi-close"></i>
+    <p class="settings-heading">CHI TIẾT ĐƠN HÀNG</p>
+    <div class="card">
+        <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label for="exampleInputCity1">Mã đơn</label>
+                        <input type="text" class="form-control" id="requestCustomer">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputName1">Hãng</label>
+                        <select class="form-control" id="requestBranch" disabled>
+                                <% branchs.forEach(function(item){ %>
+                                    <option value="<%= item.id %>"><%= item.name %></option>
+                                    <% }); %>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputPassword4">Ngày đặt</label>
+                        <input type="text" class="form-control"  value="08/08/2018" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputPassword4">Ngày trả</label>
+                        <input type="text" class="form-control"  value="08/08/2018" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Ngày nhận</label>
+                        <input type="text" class="form-control"  value="08/08/2018" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Cân nặng</label>
+                        <input type="text" class="form-control" id="requestCustomer">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Tổng tiền</label>
+                        <input type="text" class="form-control" id="requestDeposits">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Trạng thái</label>
+                        <select class="form-control" id="requestStatus">
+                            <% status.forEach(function(item){ %>
+                            <option value="<%= item.id %>"><%= item.name %></option>
+                            <% }); %>
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x350" alt="" width="150px" height="150px">
+                    </div>
+                    <div class="order-item form-group">
+                        <input class="form-control" type="text" readonly value="Mai kim ngan">
+                        <input class="form-control" type="text" readonly value="32">
+                        <input class="form-control" type="text" readonly value="red">
+                        <input class="form-control" type="text" placeholder="0.0kg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x350" alt="" width="150px" height="150px">
+                    </div>
+                    <div class="order-item form-group">
+                        <input class="form-control" type="text" readonly value="Mai kim ngan">
+                        <input class="form-control" type="text" readonly value="32">
+                        <input class="form-control" type="text" readonly value="red">
+                        <input class="form-control" type="text" placeholder="0.0kg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x350" alt="" width="150px" height="150px">
+                    </div>
+                    <div class="order-item form-group">
+                        <input class="form-control" type="text" readonly value="Mai kim ngan">
+                        <input class="form-control" type="text" readonly value="32">
+                        <input class="form-control" type="text" readonly value="red">
+                        <input class="form-control" type="text" placeholder="0.0kg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x350" alt="" width="150px" height="150px">
+                    </div>
+                    <div class="order-item form-group">
+                        <input class="form-control" type="text" readonly value="Mai kim ngan">
+                        <input class="form-control" type="text" readonly value="32">
+                        <input class="form-control" type="text" readonly value="red">
+                        <input class="form-control" type="text" placeholder="0.0kg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x350" alt="" width="150px" height="150px">
+                    </div>
+                    <div class="order-item form-group">
+                        <input class="form-control" type="text" readonly value="Mai kim ngan">
+                        <input class="form-control" type="text" readonly value="32">
+                        <input class="form-control" type="text" readonly value="red">
+                        <input class="form-control" type="text" placeholder="0.0kg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="http://via.placeholder.com/350x350" alt="" width="150px" height="150px">
+                    </div>
+                    <div class="order-item form-group">
+                        <input class="form-control" type="text" readonly value="Mai kim ngan">
+                        <input class="form-control" type="text" readonly value="32">
+                        <input class="form-control" type="text" readonly value="red">
+                        <input class="form-control" type="text" placeholder="0.0kg">
+                    </div>
+                </div>
+
+                <button id="btnRequestDetail" type="submit" class="btn btn-success mr-2">Cập nhật</button>
+                <button id="btnAddRequestDetail" type="submit" class="btn btn-warning mr-2">Thêm mới</button>
+        </div>
+    </div>
+</div>

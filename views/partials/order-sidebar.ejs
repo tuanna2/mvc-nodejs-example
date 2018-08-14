@@ -1,0 +1,63 @@
+<div id="right-sidebar" class="settings-panel">
+    <i class="settings-close mdi mdi-close"></i>
+    <p class="settings-heading">CHI TIẾT ĐẶT HÀNG</p>
+    <div class="card">
+        <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputName1">Hãng</label>
+                    <select class="form-control" id="requestBranch">
+                            <% branchs.forEach(function(item){ %>
+                                <option value="<%= item.id %>"><%= item.name %></option>
+                                <% }); %>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Link sản phẩm</label>
+                    <input type="text" class="form-control" id="requestLink" placeholder="http://www.uniqlo.com/products/1">
+                    <img style="margin-top: 10px; display:none" src="http://via.placeholder.com/350x350" width="150px" height="150px">
+
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputPassword4">Màu</label>
+                        <input type="text" class="form-control" id="requestColor">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputPassword4">Size</label>
+                        <input type="text" class="form-control" id="requestSize">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Giá</label>
+                        <input type="text" class="form-control" id="requestPrice">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea1">Note</label>
+                    <textarea class="form-control" id="requestNote" rows="2"></textarea>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Khách</label>
+                        <input type="text" class="form-control" id="requestCustomer">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Cọc</label>
+                        <input type="text" class="form-control" id="requestDeposits">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputCity1">Trạng thái</label>
+                        <select class="form-control" id="requestStatus">
+                            <% status.forEach(function(item){ %>
+                            <option value="<%= item.id %>"><%= item.name %></option>
+                            <% }); %>
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <button id="btnRequestDetail" type="submit" class="btn btn-success mr-2">Cập nhật</button>
+                <button id="btnAddRequestDetail" type="submit" class="btn btn-warning mr-2">Thêm mới</button>
+        </div>
+    </div>
+</div>
