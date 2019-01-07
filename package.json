@@ -10,8 +10,8 @@
   "author": "hoangnm",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.6",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
